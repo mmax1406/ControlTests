@@ -1,0 +1,3 @@
+- Add inverter 
+- view about the motor control average inverter and the simscape electrical 3 phase converter
+- Implement the transformation blocks by myself, the math is not hard
