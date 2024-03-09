@@ -13,10 +13,16 @@ Ts = 1/2000; % [s]
 % Put all in a single vector
 params = [g,m,l,Ts];
 
+% State space representation (Continues and linearized)
+A = [0 1; -(g/l) 0];
+B = [0; 1/(m*l^2)];
+C = [1 0];
+D = 0;
+
 % Process noise covariance
-Q = 1e-5;
+Q = 1e-3;
 % Measurement noise covariance
-R = 1e-3;
+R = 1e-4;
 
 
 
